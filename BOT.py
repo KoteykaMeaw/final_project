@@ -12,16 +12,16 @@ bot = commands.Bot(command_prefix='/', intents=intents)
 async def on_ready():
     print(f'We have logged in as {bot.user}')
 
-@bot.command('global_warming')
-async def warm(ctx):
+@bot.command()
+async def global_warming(ctx):
     images = os.listdir('images')
     img_name = random.choice(images)
     with open(f'images/{img_name}', 'rb') as f:
             picture = discord.File(f)
     await ctx.send(file=picture)
     
-@bot.command('global_warming2')
-async def warm(ctx):
+@bot.command()
+async def global_warming2(ctx):
     images = os.listdir('images2')
     img_name = random.choice(images)
     with open(f'images2/{img_name}', 'rb') as f:
