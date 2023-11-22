@@ -41,4 +41,4 @@ async def global_warming2(interaction: discord.Integration):
             picture2 = discord.File(f)
     await interaction.response.send_message(file=picture2)
     
-bot.run('MTE2MDQ4MjExMTMyNTc0NTIwMg.GNyUgN.2VMw9FhrD_e4IzE_lUyx-7DJIz8dlD_dMbnKJ4')
+bot.run('token')
